@@ -2,6 +2,8 @@ require "bundler/setup"
 Bundler.require
 require "rails/all"
 
+abort "No DATABASE_URL" unless ENV["DATABASE_URL"]
+
 module BlazerSolo
   class Application < Rails::Application
     routes.append do
