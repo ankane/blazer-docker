@@ -10,7 +10,13 @@ Build
 docker build -t blazer .
 ```
 
-Run
+Create database tables
+
+```sh
+docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname blazer bin/rails db:migrate
+```
+
+Run the web server
 
 ```sh
 docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname -p 8080:8080 blazer
@@ -96,7 +102,7 @@ docker build -t my-blazer .
 
 ## Plan
 
-- instructions for migrations
+- instructions for checks
 - instructions for authentication
 - more adapters
 - publish to Docker Hub
