@@ -4,22 +4,22 @@ An experimental Docker image for [Blazer](https://github.com/ankane/blazer)
 
 ## Getting Started
 
-Build
+Pull the image
 
 ```sh
-docker build -t blazer .
+docker pull ankane/blazer
 ```
 
 Create database tables
 
 ```sh
-docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname blazer bin/rails db:migrate
+docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname ankane/blazer bin/rails db:migrate
 ```
 
 Run the web server
 
 ```sh
-docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname -p 8080:8080 blazer
+docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname -p 8080:8080 ankane/blazer
 ```
 
 And visit [http://localhost:8080](http://localhost:8080)
@@ -97,7 +97,7 @@ check_schedules:
 Create a `Dockerfile` with:
 
 ```Dockerfile
-FROM blazer
+FROM ankane/blazer
 
 COPY blazer.yml /app/config/blazer.yml
 ```
@@ -108,7 +108,19 @@ And build your image:
 docker build -t my-blazer .
 ```
 
-## Plan
+## Contributing
 
-- instructions for checks
-- publish to Docker Hub
+Everyone is encouraged to help improve this project. Here are a few ways you can help:
+
+- [Report bugs](https://github.com/ankane/blazer-docker/issues)
+- Fix bugs and [submit pull requests](https://github.com/ankane/blazer-docker/pulls)
+- Write, clarify, or fix documentation
+- Suggest or add new features
+
+To get started with development:
+
+```sh
+git clone https://github.com/ankane/blazer-docker.git
+cd blazer-docker
+docker build -t ankane/blazer:latest .
+```
