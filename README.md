@@ -104,5 +104,4 @@ docker build -t my-blazer .
 
 - instructions for checks
 - instructions for authentication
-- more adapters
 - publish to Docker Hub

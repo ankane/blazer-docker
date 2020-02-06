@@ -4,7 +4,8 @@ MAINTAINER Andrew Kane <andrew@chartkick.com>
 
 RUN apk add --update ruby-dev build-base \
   libxml2-dev libxslt-dev pcre-dev libffi-dev \
-  postgresql-dev git
+  postgresql-dev mysql-dev sqlite-dev git \
+  unixodbc-dev freetds-dev
 
 RUN gem install bundler
 
