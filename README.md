@@ -26,6 +26,14 @@ And visit [http://localhost:8080](http://localhost:8080)
 
 > On Mac, use `host.docker.internal` instead of `localhost` to access the host machine (requires Docker 18.03+)
 
+## Authentication
+
+For basic authentication, use:
+
+```txt
+-e BLAZER_USERNAME=admin -e BLAZER_PASSWORD=secret
+```
+
 ## Customization
 
 Create a `blazer.yml` file with:
@@ -103,5 +111,4 @@ docker build -t my-blazer .
 ## Plan
 
 - instructions for checks
-- instructions for authentication
 - publish to Docker Hub
