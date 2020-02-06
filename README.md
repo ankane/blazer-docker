@@ -13,7 +13,7 @@ docker pull ankane/blazer
 Create database tables
 
 ```sh
-docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname ankane/blazer bin/rails db:migrate
+docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname ankane/blazer rails db:migrate
 ```
 
 Run the web server
@@ -30,9 +30,35 @@ And visit [http://localhost:8080](http://localhost:8080)
 
 For basic authentication, use:
 
-```txt
+```sh
 -e BLAZER_USERNAME=admin -e BLAZER_PASSWORD=secret
 ```
+
+## Checks
+
+TODO: SMTP instructions
+
+Schedule checks to run (with cron, [Heroku Scheduler](https://elements.heroku.com/addons/scheduler), etc). The default options are every 5 minutes, 1 hour, or 1 day, which you can customize. For each of these options, set up a task to run.
+
+```sh
+docker run ... rake blazer:run_checks SCHEDULE="5 minutes"
+docker run ... rake blazer:run_checks SCHEDULE="1 hour"
+docker run ... rake blazer:run_checks SCHEDULE="1 day"
+```
+
+You can also set up failing checks to be sent once a day (or whatever you prefer).
+
+```sh
+docker run ... rake blazer:send_failing_checks
+```
+
+For Slack notifications, create an [incoming webhook](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) and set:
+
+```sh
+-e BLAZER_SLACK_WEBHOOK_URL=https://hooks.slack.com/...
+```
+
+Name the webhook “Blazer” and add a cool icon.
 
 ## Customization
 
