@@ -27,4 +27,4 @@ ENV PORT 8080
 
 EXPOSE 8080
 
-CMD puma -C config/puma.rb
+CMD puma -C /app/config/puma.rb
