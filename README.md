@@ -134,6 +134,10 @@ And build your image:
 docker build -t my-blazer .
 ```
 
+## History
+
+View the [changelog](https://github.com/ankane/blazer-docker/blob/master/CHANGELOG.md)
+
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
