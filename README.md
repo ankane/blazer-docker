@@ -28,11 +28,13 @@ And visit [http://localhost:8080](http://localhost:8080)
 
 ## Authentication
 
-For basic authentication, use:
+Add basic authentication with:
 
 ```sh
 -e BLAZER_USERNAME=admin -e BLAZER_PASSWORD=secret
 ```
+
+Or use a reverse proxy like [OAuth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy).
 
 ## Checks
 
