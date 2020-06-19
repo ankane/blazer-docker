@@ -45,6 +45,9 @@ GEM
     activerecord (6.0.3.1)
       activemodel (= 6.0.3.1)
       activesupport (= 6.0.3.1)
+    activerecord6-redshift-adapter (1.1.2)
+      activerecord (~> 6.0, >= 6.0.0)
+      pg (>= 0.18)
     activestorage (6.0.3.1)
       actionpack (= 6.0.3.1)
       activejob (= 6.0.3.1)
@@ -262,6 +265,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord6-redshift-adapter
   aws-sdk-athena
   aws-sdk-glue
   blazer

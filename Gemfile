@@ -6,6 +6,7 @@ gem "puma"
 gem "tzinfo-data"
 
 # data stores
+gem "activerecord6-redshift-adapter"
 gem "aws-sdk-athena"
 gem "aws-sdk-glue"
 gem "drill-sergeant"
