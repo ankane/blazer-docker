@@ -14,7 +14,7 @@ module BlazerSolo
         if Blazer::Connection.connection.active?
           [200, {}, ["OK"]]
         else
-          [503, {}, ["FAIL"]]
+          [503, {}, ["Service Unavailable"]]
         end
       }
 
