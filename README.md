@@ -36,10 +36,6 @@ Add basic authentication with:
 
 Or use a reverse proxy like [OAuth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy).
 
-## Health
-
-Use the `/health` endpoint to check if the app is running and can connect to the database. Status code `200` indicates healthy.
-
 ## Checks
 
 TODO: SMTP instructions
@@ -139,6 +135,12 @@ And build your image:
 ```sh
 docker build -t my-blazer .
 ```
+
+## Deployment
+
+### Health Checks
+
+Use the `/health` endpoint for health checks. Status code `200` indicates healthy.
 
 ## History
 
