@@ -1,6 +1,6 @@
 # Blazer Docker
 
-An experimental Docker image for [Blazer](https://github.com/ankane/blazer)
+A Docker image for [Blazer](https://github.com/ankane/blazer)
 
 ## Getting Started
 
