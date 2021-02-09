@@ -76,7 +76,7 @@ GEM
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.2.2)
       aws-eventstream (~> 1, >= 1.0.2)
-    blazer (2.4.1)
+    blazer (2.4.2)
       activerecord (>= 5)
       chartkick (>= 3.2)
       railties (>= 5)
@@ -147,7 +147,7 @@ GEM
     hexspace (0.1.1)
       thrift
     httpclient (2.8.3)
-    i18n (1.8.7)
+    i18n (1.8.8)
       concurrent-ruby (~> 1.0)
     ignite-client (0.1.1)
     ione (1.2.4)
