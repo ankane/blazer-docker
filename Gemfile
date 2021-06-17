@@ -20,7 +20,7 @@ gem "ignite-client"
 gem "mongo"
 gem "mysql2"
 gem "neo4j-core"
-# gem "activerecord-oracle_enhanced-adapter"
+# gem "activerecord-oracle_enhanced-adapter", :require => false
 # gem "ruby-oci8" # for oracle
 gem "pg"
 gem "presto-client"

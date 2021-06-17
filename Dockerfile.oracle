@@ -1,0 +1,28 @@
+FROM registry.access.redhat.com/ubi8/ruby-27:latest
+
+LABEL authors="Andrew Kane <andrew@chartkick.com>, Luca Lorenzetto <lorenzetto.luca@gmail.com>"
+USER root
+
+RUN gem install bundler
+
+ENV INSTALL_PATH /app
+
+RUN mkdir -p $INSTALL_PATH
+
+WORKDIR $INSTALL_PATH
+
+COPY Gemfile Gemfile.lock ./
+
+RUN dnf localinstall -y https://download.oracle.com/otn_software/linux/instantclient/211000/oracle-instantclient-basic-21.1.0.0.0-1.x86_64.rpm https://download.oracle.com/otn_software/linux/instantclient/211000/oracle-instantclient-sqlplus-21.1.0.0.0-1.x86_64.rpm https://download.oracle.com/otn_software/linux/instantclient/211000/oracle-instantclient-devel-21.1.0.0.0-1.x86_64.rpm
+
+RUN bundle install --binstubs
+
+COPY . .
+
+RUN bundle exec rake RAILS_ENV=production DATABASE_URL=postgresql://user:pass@127.0.0.1/dbname SECRET_TOKEN=dummytoken assets:precompile
+
+ENV PORT 8080
+
+EXPOSE 8080
+
+CMD puma -C /app/config/puma.rb
