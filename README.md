@@ -38,8 +38,6 @@ Or use a reverse proxy like [OAuth2 Proxy](https://github.com/oauth2-proxy/oauth
 
 ## Checks
 
-TODO: SMTP instructions
-
 Schedule checks to run (with cron, [Heroku Scheduler](https://elements.heroku.com/addons/scheduler), etc). The default options are every 5 minutes, 1 hour, or 1 day, which you can customize. For each of these options, set up a task to run.
 
 ```sh
@@ -61,6 +59,34 @@ For Slack notifications, create an [incoming webhook](https://slack.com/apps/A0F
 ```
 
 Name the webhook “Blazer” and add a cool icon.
+
+### Mailing
+
+Create a `mailer.rb` file with:
+
+```ruby
+Rails.application.config.action_mailer.default_url_options = {
+  host: ENV['HOST'],
+}
+Rails.application.config.action_mailer.delivery_method = :smtp
+Rails.application.config.action_mailer.smtp_settings = {
+  authentication: :plain,
+  address: ENV['MAIL_SMTP_URL'],
+  port: ENV['MAIL_SMTP_PORT'],
+  user_name: ENV['MAIL_SMTP_USERNAME'],
+  password: ENV['MAIL_SMTP_PASSWORD'],
+  domain: ENV['MAIL_SMTP_DOMAIN']
+}
+Rails.application.config.action_mailer.default_options = {
+  from: ENV['MAIL_SMTP_FROM']
+}
+```
+
+Copy the `mailer.rb` file into your image (using the `Dockerfile`) and build it (like in Customization):
+
+`COPY mailer.rb /app/config/initializers/mailer.rb`
+
+Make sure to populate all environment variables for runtime.
 
 ## Customization
 
