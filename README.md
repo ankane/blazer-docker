@@ -118,8 +118,22 @@ check_schedules:
   - "1 hour"
   - "5 minutes"
 
+# enable anomaly detection
+# note: with trend, time series are sent to https://trendapi.org
+# anomaly_checks: trend
+
+# enable forecasting
+# note: with trend, time series are sent to https://trendapi.org
+# forecasting: trend
+
 # enable map
 # mapbox_access_token: <%= ENV["MAPBOX_ACCESS_TOKEN"] %>
+
+# enable uploads
+# uploads:
+#   url: <%= ENV["BLAZER_UPLOADS_URL"] %>
+#   schema: uploads
+#   data_source: main
 ```
 
 Create a `Dockerfile` with:

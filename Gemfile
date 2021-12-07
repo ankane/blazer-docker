@@ -29,3 +29,7 @@ gem "restforce"
 gem "sqlite3"
 # gem "tiny_tds"
 # gem "activerecord-sqlserver-adapter"
+
+# anomaly detection and forecasting
+gem "trend"
+# gem "prophet-rb"
