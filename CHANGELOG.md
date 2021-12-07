@@ -1,5 +1,19 @@
-## 0.1.1 (unreleased)
+## 2.4.8 (2021-12-07)
 
+- Updated Blazer to 2.4.8
+- Added support for anomaly detection and forecasting
+
+## 2.4.5 (2021-09-15)
+
+- Updated Blazer to 2.4.5
+
+## 2.4.4 (2021-09-15)
+
+- Updated Blazer to 2.4.4
+
+## 2.4.0 (2020-12-16)
+
+- Updated Blazer to 2.4.0
 - Added support for `BLAZER_DATABASE_URL`
 
 ## 0.1.0 (2020-02-05)
