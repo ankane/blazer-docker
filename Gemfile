@@ -31,7 +31,6 @@ gem "sqlite3"
 # gem "activerecord-sqlserver-adapter"
 
 # anomaly detection and forecasting
-
 gem "anomaly_detection"
 # gem "prophet-rb"
 gem "trend"

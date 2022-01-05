@@ -120,7 +120,7 @@ check_schedules:
 
 # enable anomaly detection
 # note: with trend, time series are sent to https://trendapi.org
-# anomaly_checks: trend
+# anomaly_checks: trend / anomaly_detection
 
 # enable forecasting
 # note: with trend, time series are sent to https://trendapi.org
