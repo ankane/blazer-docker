@@ -1,6 +1,20 @@
 require "bundler/setup"
 Bundler.require
-require "rails/all"
+
+require "rails"
+
+%w(
+  active_record/railtie
+  action_controller/railtie
+  action_mailer/railtie
+  action_view/railtie
+  sprockets/railtie
+).each do |railtie|
+  begin
+    require railtie
+  rescue LoadError
+  end
+end
 
 abort "No DATABASE_URL" unless ENV["DATABASE_URL"]
 
