@@ -5,7 +5,7 @@ gem "blazer"
 gem "puma"
 gem "tzinfo-data"
 
-# data stores
+# data sources
 gem "activerecord6-redshift-adapter"
 gem "aws-sdk-athena"
 gem "aws-sdk-glue"
@@ -31,5 +31,7 @@ gem "sqlite3"
 # gem "activerecord-sqlserver-adapter"
 
 # anomaly detection and forecasting
-gem "trend"
+
+gem "anomaly_detection"
 # gem "prophet-rb"
+gem "trend"

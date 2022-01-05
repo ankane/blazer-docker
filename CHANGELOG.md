@@ -1,3 +1,7 @@
+## 2.5.0 (2022-01-04)
+
+- Updated Blazer to 2.5.0
+
 ## 2.4.8 (2021-12-07)
 
 - Updated Blazer to 2.4.8
