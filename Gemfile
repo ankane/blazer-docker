@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "rails", "~> 6.1.0"
-gem "blazer"
+gem "blazer", "2.6.0"
 gem "puma"
 gem "tzinfo-data"
 
