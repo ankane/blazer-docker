@@ -82,7 +82,7 @@ GEM
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.4.0)
       aws-eventstream (~> 1, >= 1.0.2)
-    blazer (2.6.0)
+    blazer (2.6.1)
       activerecord (>= 5)
       chartkick (>= 3.2)
       railties (>= 5)
@@ -283,7 +283,7 @@ DEPENDENCIES
   anomaly_detection
   aws-sdk-athena
   aws-sdk-glue
-  blazer (= 2.6.0)
+  blazer (= 2.6.1)
   cassandra-driver
   drill-sergeant
   elasticsearch (< 7.14)
