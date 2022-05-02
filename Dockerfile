@@ -18,7 +18,7 @@ RUN apk add --update ruby-dev build-base libxml2-dev libxslt-dev pcre-dev libffi
     bundle install && \
     bundle exec rails app:update:bin && \
     bundle exec rake assets:precompile && \
-    apk del ruby-dev build-base libxml2-dev libxslt-dev pcre-dev libffi-dev libpq-dev mariadb-dev sqlite-dev git unixodbc-dev unixodbc-dev && \
+    apk del ruby-dev build-base libxml2-dev libxslt-dev pcre-dev libffi-dev libpq-dev mariadb-dev sqlite-dev git unixodbc-dev && \
     rm -rf /var/cache/apk/*
 
 ENV PORT 8080
