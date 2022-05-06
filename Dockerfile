@@ -13,12 +13,12 @@ WORKDIR $INSTALL_PATH
 
 COPY . .
 
-RUN apk add --update ruby-dev build-base libxml2-dev libxslt-dev pcre-dev libffi-dev libpq-dev mariadb-dev sqlite-dev git unixodbc-dev libpq mariadb-connector-c sqlite-libs unixodbc && \
+RUN apk add --update build-base git libpq-dev mariadb-dev sqlite-dev libpq mariadb-connector-c sqlite-libs unixodbc && \
     gem install bundler && \
     bundle install && \
     bundle exec rails app:update:bin && \
     bundle exec rake assets:precompile && \
-    apk del ruby-dev build-base libxml2-dev libxslt-dev pcre-dev libffi-dev libpq-dev mariadb-dev sqlite-dev git unixodbc-dev && \
+    apk del build-base git libpq-dev mariadb-dev sqlite-dev && \
     rm -rf /var/cache/apk/*
 
 ENV PORT 8080
