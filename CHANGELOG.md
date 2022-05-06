@@ -1,3 +1,7 @@
+## 2.6.2 (unreleased)
+
+- Added Prophet
+
 ## 2.6.1 (2022-04-21)
 
 - Updated Blazer to 2.6.1

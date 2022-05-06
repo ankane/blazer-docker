@@ -31,5 +31,5 @@ gem "sqlite3"
 
 # anomaly detection and forecasting
 gem "anomaly_detection"
-# gem "prophet-rb"
+gem "prophet-rb"
 gem "trend"
