@@ -1,3 +1,7 @@
+## 2.6.4 (unreleased)
+
+- Updated Blazer to 2.6.4
+
 ## 2.6.3 (2022-05-11)
 
 - Updated Blazer to 2.6.3
