@@ -1,4 +1,4 @@
-## 2.6.5 (unreleased)
+## 2.6.5 (2022-08-31)
 
 - Updated Blazer to 2.6.5
 
