@@ -109,7 +109,7 @@ GEM
     erubi (1.11.0)
     ethon (0.15.0)
       ffi (>= 1.15.0)
-    faraday (0.17.5)
+    faraday (0.17.6)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.12.2)
       faraday (>= 0.7.4, < 1.0)
