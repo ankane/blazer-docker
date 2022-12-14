@@ -4,27 +4,27 @@ A Docker image for [Blazer](https://github.com/ankane/blazer)
 
 ## Getting Started
 
-Pull the image
+Pull the image:
 
 ```sh
 docker pull ankane/blazer
 ```
 
-Create database tables
+Create database tables:
 
 ```sh
 docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname ankane/blazer rails db:migrate
 ```
 
-Run the web server
+Run the web server:
 
 ```sh
 docker run -ti -e DATABASE_URL=postgres://user:password@hostname:5432/dbname -p 8080:8080 ankane/blazer
 ```
 
-And visit [http://localhost:8080](http://localhost:8080)
+Use URL-encoding for any special characters in the username or password. For databases on the host machine, use `host.docker.internal` as the hostname (on Linux, this requires Docker 20.04+ and `--add-host=host.docker.internal:host-gateway`).
 
-> On Mac, use `host.docker.internal` instead of `localhost` to access the host machine (requires Docker 18.03+)
+Then visit [http://localhost:8080](http://localhost:8080).
 
 ## Authentication
 
