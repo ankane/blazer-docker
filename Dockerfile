@@ -1,4 +1,4 @@
-FROM ruby:3.0.4-alpine3.15
+FROM ruby:3.0.5-alpine3.15
 
 MAINTAINER Andrew Kane <andrew@ankane.org>
 
@@ -16,7 +16,7 @@ COPY . .
 RUN apk add --update build-base git libpq-dev mariadb-dev sqlite-dev libpq mariadb-connector-c sqlite-libs unixodbc && \
     gem install bundler && \
     bundle install && \
-    bundle exec rails app:update:bin && \
+    bundle binstubs --all && \
     bundle exec rake assets:precompile && \
     apk del build-base git libpq-dev mariadb-dev sqlite-dev && \
     rm -rf /var/cache/apk/*
