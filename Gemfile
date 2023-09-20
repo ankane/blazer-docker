@@ -1,12 +1,13 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 6.1.0"
-gem "blazer", "2.6.5"
+gem "rails", "~> 7.0.0"
+gem "sprockets-rails"
+gem "blazer", "3.0.0"
 gem "puma"
 gem "tzinfo-data"
 
 # data sources
-gem "activerecord6-redshift-adapter"
+# gem "activerecord6-redshift-adapter"
 gem "aws-sdk-athena"
 gem "aws-sdk-glue"
 gem "drill-sergeant"

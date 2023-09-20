@@ -39,6 +39,7 @@ module BlazerSolo
     config.eager_load = true
     config.log_level = :info
     config.secret_key_base = ENV["SECRET_KEY_BASE"] || SecureRandom.hex(30)
+    config.active_record.legacy_connection_handling = false
 
     config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"] != "disabled"
 
