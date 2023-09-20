@@ -26,7 +26,7 @@ gem "pg"
 gem "presto-client"
 gem "restforce"
 # gem "odbc_adapter" # TODO add snowflake driver
-gem "sqlite3"
+# gem "sqlite3"
 # gem "tiny_tds"
 # gem "activerecord-sqlserver-adapter"
 

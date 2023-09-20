@@ -1,6 +1,7 @@
 ## 3.0.0 (unreleased)
 
 - Updated Blazer to 3.0.0
+- Added experimental support for `linux/arm64`
 
 ## 2.6.5 (2022-08-31)
 
