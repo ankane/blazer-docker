@@ -1,4 +1,4 @@
-## 3.0.0 (unreleased)
+## 3.0.0 (2023-09-20)
 
 - Updated Blazer to 3.0.0
 - Added experimental support for `linux/arm64`
