@@ -71,21 +71,21 @@ GEM
     anomaly_detection (0.2.2)
       rice (>= 4.0.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.825.0)
-    aws-sdk-athena (1.74.0)
-      aws-sdk-core (~> 3, >= 3.177.0)
+    aws-partitions (1.834.0)
+    aws-sdk-athena (1.75.0)
+      aws-sdk-core (~> 3, >= 3.184.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-core (3.182.0)
+    aws-sdk-core (3.185.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-glue (1.155.0)
-      aws-sdk-core (~> 3, >= 3.177.0)
+    aws-sdk-glue (1.156.0)
+      aws-sdk-core (~> 3, >= 3.184.0)
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.6.0)
       aws-eventstream (~> 1, >= 1.0.2)
-    blazer (3.0.0)
+    blazer (3.0.1)
       activerecord (>= 6.1)
       chartkick (>= 5)
       railties (>= 6.1)
@@ -119,7 +119,7 @@ GEM
     faraday_middleware-multi_json (0.0.6)
       faraday_middleware
       multi_json
-    ffi (1.15.5)
+    ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
     google-apis-bigquery_v2 (0.59.0)
@@ -133,7 +133,7 @@ GEM
       retriable (>= 2.0, < 4.a)
       rexml
       webrick
-    google-cloud-bigquery (1.44.2)
+    google-cloud-bigquery (1.45.0)
       concurrent-ruby (~> 1.0)
       google-apis-bigquery_v2 (~> 0.1)
       google-cloud-core (~> 1.6)
@@ -191,7 +191,7 @@ GEM
       multi_json
       net_tcp_client (>= 2.0.1)
       typhoeus (>= 1.1.2)
-    net-imap (0.3.7)
+    net-imap (0.4.0)
       date
       net-protocol
     net-pop (0.1.2)
@@ -217,7 +217,7 @@ GEM
       numo-narray (>= 0.9.1.7)
       rover-df
     public_suffix (5.0.3)
-    puma (6.3.1)
+    puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
@@ -295,7 +295,7 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.6.11)
+    zeitwerk (2.6.12)
 
 PLATFORMS
   ruby
@@ -304,7 +304,7 @@ DEPENDENCIES
   anomaly_detection
   aws-sdk-athena
   aws-sdk-glue
-  blazer (= 3.0.0)
+  blazer (= 3.0.1)
   cassandra-driver
   drill-sergeant
   elasticsearch (< 7.14)
