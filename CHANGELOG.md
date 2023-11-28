@@ -1,3 +1,7 @@
+## 3.0.2 (unreleased)
+
+- Updated Blazer to 3.0.2
+
 ## 3.0.1 (2023-10-08)
 
 - Updated Blazer to 3.0.1
