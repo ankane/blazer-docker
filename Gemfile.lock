@@ -262,7 +262,7 @@ GEM
       hashie (>= 1.2.0, < 6.0)
       jwt (>= 1.5.6)
     retriable (3.1.2)
-    rexml (3.3.2)
+    rexml (3.3.5)
       strscan
     rice (4.1.0)
     rover-df (0.3.4)
