@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "~> 7.0.0"
 gem "sprockets-rails"
-gem "blazer", "3.0.2"
+gem "blazer", "3.0.4"
 gem "puma"
 gem "tzinfo-data"
 
@@ -34,6 +34,3 @@ gem "restforce"
 gem "anomaly_detection"
 gem "prophet-rb"
 gem "trend"
-
-# TODO remove when updating Ruby
-gem "uri", ">= 0.12.2"
