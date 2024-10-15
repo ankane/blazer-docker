@@ -92,11 +92,11 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bigdecimal (3.1.8)
-    blazer (3.0.4)
+    blazer (3.1.0)
       activerecord (>= 6.1)
       chartkick (>= 5)
       csv
-      railties (>= 6.1)
+      railties (>= 7)
       safely_block (>= 0.4)
     bson (5.0.1)
     builder (3.3.0)
@@ -315,7 +315,7 @@ DEPENDENCIES
   anomaly_detection
   aws-sdk-athena
   aws-sdk-glue
-  blazer (= 3.0.4)
+  blazer (= 3.1.0)
   cassandra-driver
   drill-sergeant
   elasticsearch (< 7.14)
