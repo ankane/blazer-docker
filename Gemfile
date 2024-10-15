@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 7.0.0"
+gem "rails", "~> 7.2.0"
 gem "sprockets-rails"
 gem "blazer", "3.0.4"
 gem "puma"
@@ -19,7 +19,7 @@ gem "hexspace"
 gem "ignite-client"
 gem "mongo"
 gem "mysql2"
-gem "neo4j-core"
+# gem "neo4j-core"
 # gem "activerecord-oracle_enhanced-adapter"
 # gem "ruby-oci8" # for oracle
 gem "pg"
