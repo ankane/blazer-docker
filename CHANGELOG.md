@@ -1,4 +1,4 @@
-## 3.1.0 (unreleased)
+## 3.1.0 (2024-10-14)
 
 - Updated Blazer to 3.1.0
 - Removed Neo4j support
