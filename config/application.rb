@@ -21,16 +21,9 @@ abort "No DATABASE_URL" unless ENV["DATABASE_URL"]
 module BlazerSolo
   class Application < Rails::Application
     routes.append do
-      # checks app is up and can connect to database
-      # does not check data sources
+      # checks app is up, not database or data sources healthy
       # not protected by auth, so do not expose data
-      get "health", to: ->(env) {
-        if Blazer::Connection.connection.active?
-          [200, {}, ["OK"]]
-        else
-          [503, {}, ["Service Unavailable"]]
-        end
-      }
+      get "health", to: ->(env) { [200, {}, ["OK"]] }
 
       mount Blazer::Engine, at: "/"
     end
