@@ -12,7 +12,7 @@ WORKDIR $INSTALL_PATH
 
 COPY . .
 
-RUN apk add --update build-base gcompat git libpq-dev mariadb-dev libpq mariadb-connector-c unixodbc && \
+RUN apk add --update build-base gcompat git libpq-dev libstdc++ mariadb-dev libpq mariadb-connector-c unixodbc yaml-dev && \
     gem install bundler && \
     bundle install && \
     bundle binstubs --all && \
