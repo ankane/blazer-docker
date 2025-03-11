@@ -1,4 +1,4 @@
-## 3.2.0 (unreleased)
+## 3.2.0 (2025-03-10)
 
 - Updated Blazer to 3.2.0
 
