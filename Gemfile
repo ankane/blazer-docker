@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "~> 7.2.0"
 gem "sprockets-rails"
-gem "blazer", "3.2.0"
+gem "blazer", "3.2.1"
 gem "puma"
 gem "tzinfo-data"
 
