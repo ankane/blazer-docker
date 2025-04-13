@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 7.2.0"
+gem "rails", "~> 8.0.0"
 gem "sprockets-rails"
 gem "blazer", "3.3.0"
 gem "puma"
