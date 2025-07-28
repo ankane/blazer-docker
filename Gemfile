@@ -22,7 +22,7 @@ gem "mysql2"
 # gem "neo4j-core"
 # gem "activerecord-oracle_enhanced-adapter"
 # gem "ruby-oci8" # for oracle
-gem "pg"
+gem "pg", force_ruby_platform: true
 gem "presto-client"
 gem "restforce"
 # gem "odbc_adapter" # TODO add snowflake driver

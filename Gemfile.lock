@@ -214,7 +214,7 @@ GEM
       racc (~> 1.4)
     numo-narray (0.9.2.1)
     os (1.1.4)
-    pg (1.5.9)
+    pg (1.6.0)
     pp (0.6.2)
       prettyprint
     presto-client (0.6.6)
