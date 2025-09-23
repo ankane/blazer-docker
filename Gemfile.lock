@@ -288,7 +288,7 @@ GEM
       hashie (>= 1.2.0, < 6.0)
       jwt (>= 1.5.6)
     retriable (3.1.2)
-    rexml (3.4.1)
+    rexml (3.4.4)
     rice (4.5.0)
     rover-df (0.4.1)
       numo-narray (>= 0.9.1.9)
