@@ -235,7 +235,7 @@ GEM
     puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (3.2.0)
+    rack (3.2.2)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -317,7 +317,7 @@ GEM
     tzinfo-data (1.2025.2)
       tzinfo (>= 1.0.0)
     uber (0.1.0)
-    uri (1.0.3)
+    uri (1.0.4)
     useragent (0.16.11)
     websocket-driver (0.8.0)
       base64
