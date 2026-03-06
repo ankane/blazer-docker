@@ -14,6 +14,7 @@ COPY . .
 
 RUN apk add --update build-base gcompat git libpq-dev libstdc++ mariadb-dev libpq mariadb-connector-c unixodbc yaml-dev && \
     gem install bundler && \
+    bundle lock --normalize-platforms && \
     bundle install && \
     bundle binstubs --all && \
     bundle exec rake assets:precompile && \
