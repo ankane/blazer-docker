@@ -125,7 +125,7 @@ GEM
     elasticsearch-transport (7.5.0)
       faraday (>= 0.14, < 1)
       multi_json
-    erb (6.0.1)
+    erb (6.0.2)
     erubi (1.13.1)
     faraday (0.17.6)
       multipart-post (>= 1.2, < 3)
@@ -182,7 +182,7 @@ GEM
     jwt (2.10.1)
       base64
     logger (1.7.0)
-    loofah (2.25.0)
+    loofah (2.25.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.9.0)
@@ -194,7 +194,8 @@ GEM
     marcel (1.1.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
-    minitest (6.0.1)
+    minitest (6.0.2)
+      drb (~> 2.0)
       prism (~> 1.5)
     mongo (2.21.0)
       bson (>= 4.14.1, < 6.0.0)
@@ -213,7 +214,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.5)
-    nokogiri (1.19.1)
+    nokogiri (1.19.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     numo-narray (0.9.2.1)
@@ -265,8 +266,8 @@ GEM
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.6.2)
-      loofah (~> 2.21)
+    rails-html-sanitizer (1.7.0)
+      loofah (~> 2.25)
       nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
     railties (8.0.4)
       actionpack (= 8.0.4)
@@ -315,7 +316,7 @@ GEM
     stringio (3.2.0)
     thor (1.5.0)
     thrift (0.21.0)
-    timeout (0.6.0)
+    timeout (0.6.1)
     trailblazer-option (0.1.2)
     trend (0.3.0)
     tsort (0.2.0)
@@ -330,7 +331,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.7.4)
+    zeitwerk (2.7.5)
 
 PLATFORMS
   ruby
@@ -359,4 +360,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-  4.0.3
+  4.0.6
