@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 8.0.0"
+gem "rails", "~> 8.1.0"
 gem "sprockets-rails"
-gem "blazer", "3.3.0"
+gem "blazer", "3.4.0"
 gem "puma"
 gem "tzinfo-data"
 
