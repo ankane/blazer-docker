@@ -127,7 +127,7 @@ GEM
     elasticsearch-transport (7.5.0)
       faraday (>= 0.14, < 1)
       multi_json
-    erb (6.0.2)
+    erb (6.0.4)
     erubi (1.13.1)
     faraday (0.17.6)
       multipart-post (>= 1.2, < 3)
