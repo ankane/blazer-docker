@@ -205,7 +205,7 @@ GEM
     multipart-post (2.4.1)
     mutex_m (0.3.0)
     mysql2 (0.5.6)
-    net-imap (0.6.3)
+    net-imap (0.6.4)
       date
       net-protocol
     net-pop (0.1.2)
