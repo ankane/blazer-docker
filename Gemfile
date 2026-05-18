@@ -12,22 +12,23 @@ gem "aws-sdk-athena"
 gem "aws-sdk-glue"
 gem "drill-sergeant"
 gem "cassandra-driver"
-gem "elasticsearch", "< 7.14"
+gem "elasticsearch"
 gem "google-cloud-bigquery"
 gem "hexspace"
 # gem "ibm_db"
 gem "ignite-client"
-gem "mongo"
+# gem "mongo"
 gem "mysql2"
 # gem "neo4j-core"
+gem "opensearch-ruby"
 # gem "activerecord-oracle_enhanced-adapter"
 # gem "ruby-oci8" # for oracle
 gem "pg", force_ruby_platform: true
-gem "presto-client"
 gem "restforce"
 # gem "odbc_adapter" # TODO add snowflake driver
 # gem "sqlite3"
 # gem "tiny_tds"
+gem "trino-client"
 # gem "activerecord-sqlserver-adapter"
 
 # anomaly detection and forecasting
