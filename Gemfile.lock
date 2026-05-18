@@ -182,7 +182,7 @@ GEM
       reline (>= 0.4.2)
     jmespath (1.6.2)
     json (2.19.4)
-    jwt (2.10.1)
+    jwt (2.10.2)
       base64
     logger (1.7.0)
     loofah (2.25.1)
