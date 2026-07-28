@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "rails", "~> 8.1.0"
-gem "sprockets-rails"
+gem "propshaft"
 gem "blazer", "3.5.0"
 gem "puma"
 gem "tzinfo-data"
