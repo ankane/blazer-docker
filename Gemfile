@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "~> 8.1.0"
 gem "propshaft"
-gem "blazer", "3.5.0"
+gem "blazer", "3.5.1"
 gem "puma"
 gem "tzinfo-data"
 

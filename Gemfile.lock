@@ -98,7 +98,7 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.3.0)
     bigdecimal (4.1.2)
-    blazer (3.5.0)
+    blazer (3.5.1)
       activerecord (>= 7.2)
       csv
       railties (>= 7.2)
@@ -357,7 +357,7 @@ DEPENDENCIES
   anomaly_detection
   aws-sdk-athena
   aws-sdk-glue
-  blazer (= 3.5.0)
+  blazer (= 3.5.1)
   cassandra-driver
   drill-sergeant
   elasticsearch
@@ -399,7 +399,7 @@ CHECKSUMS
   aws-sigv4 (1.11.0) sha256=50a8796991a862324442036ad7a395920572b84bb6cd29b945e5e1800e8da1db
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bigdecimal (4.1.2) sha256=53d217666027eab4280346fba98e7d5b66baaae1b9c3c1c0ffe89d48188a3fbd
-  blazer (3.5.0) sha256=734b883b843fbd6d5c9db7a09ec267a068f504908f2d01b94fce151bd00ad4e2
+  blazer (3.5.1) sha256=50ac3ed5d22e9368cd4b7d4971b302dfb7dec5570f192cf70df420d7cd283fbe
   builder (3.3.0) sha256=497918d2f9dca528fdca4b88d84e4ef4387256d984b8154e9d5d3fe5a9c8835f
   bundler (4.0.15) sha256=a4ceb882fe94a0e0ac63cd0813932bbfd631a14e5ac0b7975189b19a4d28d9e7
   cassandra-driver (3.2.5) sha256=d705e74a0b7dd760adddfe805f49330f5404a8f9ab4e55d6a256582a1611aa9f
